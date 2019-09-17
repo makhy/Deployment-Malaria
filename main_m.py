@@ -37,9 +37,9 @@ def result():
 		result = process_image(img)
 		print("result from model", result)
 		if float(result) < 0.5:
-			prediction = "This is malaria infected"
-		else:
 			prediction = "This is not infected"
+		else:
+			prediction = "This is infected"
 		print(prediction)
 		return render_template("result.html", prediction = prediction)
 
