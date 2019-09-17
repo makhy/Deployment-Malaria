@@ -36,7 +36,7 @@ def result():
 		img = np.array(image.load_img(file, target_size = (64,64)))
 		result = process_image(img)
 		print("result from model", result)
-		if float(result) < 0.5:
+		if result[0] < 0.5:
 			prediction = "This is not infected"
 		else:
 			prediction = "This is infected"
