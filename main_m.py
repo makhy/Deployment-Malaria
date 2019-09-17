@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import numpy as numpy
+import numpy as np
 from keras.models import load_model
 from keras.applications import vgg16
 from keras.preprocessing import image
