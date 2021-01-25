@@ -22,3 +22,4 @@ This project trains a `transferred learning` model built on top of `vgg16` to id
 ### Deployment
 
 This Flask web app can be deployed on the Google Cloud Platform.
+![](static/images/screenshot.png)
