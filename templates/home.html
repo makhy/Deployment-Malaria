@@ -1,22 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Malaria Detection app</title>
-	<link rel = "stylesheet" href ="{{ url_for('static', filename = 'css/home.css')
-}}">
-</head>
-<body>
+{% extends "layout.html" %}
+{% block content %}
+<div class="ui container">
+	<h4 class="ui center aligned header"> Please upload a test image</h4>
+</div>
 
-<h1>Malaria Detection</h1>
-<p> Please load the image below</p>
-
-<form action = "/result" method = "POST" enctype = "multipart/form-data">
-
-	<input type = "file" name = "file" accept = "image/*">
-	<br>
-	<input type = "submit" value = "Submit">
-
+<form action="/result" method="POST" enctype="multipart/form-data">
+	<div class="">
+		<input class="fluid blue ui button" type="file" name="file" accept="image/*">
+	</div>
+	<br />
+	<div class="">
+		<input class="fluid ui button" type="submit" value="Submit">
+	</div>
 </form>
 
-</body>
-</html>
+{% endblock %}

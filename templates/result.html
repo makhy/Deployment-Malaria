@@ -1,6 +1,12 @@
-<!DOCTYPE html>
-<html>
-<body>
-	<h1> {{ prediction }} </h1>
-</body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+<div class="ui container">
+	<h3 class="ui center aligned header"> {{ prediction }} </h3>
+	<br />
+</div>
+<div class="ui container">
+	<a href="{{ url_for('home') }}">
+		<h5 class="ui center aligned header">Back to homepage</h5>
+	</a>
+</div>
+{% endblock %}
